@@ -1,0 +1,28 @@
+<form class="login-form" (ngSubmit)="login()"
+    fxLayout="column"  fxLayoutAlign="space-around center" >
+    <h1>Login Form</h1>
+    <div [formGroup]="loginForm"  >
+      <mat-form-field appearance="fill" >
+        <label>Email</label>
+        <input matInput formControlName="email" required/>
+        <mat-error *ngIf="
+            this.loginForm.get('email')?.invalid">
+          Email is not valid
+        </mat-error>
+      </mat-form-field>
+      <br><br>
+      <mat-form-field appearance="fill">
+        <label>Password</label>
+        <input matInput formControlName="password" type="password" required />
+        <mat-error *ngIf="
+            this.loginForm.get('password')?.invalid">
+          Length of password is short
+        </mat-error>
+      </mat-form-field>
+      <br>
+      <br>
+        <button mat-mini-fab class="save-button">Login
+        </button>
+    </div>
+  </form>
+  <!-- (click) = "loginUser()" -->

@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "email": "user@email.com",
+      "password": "qwerty123"
+    },
+    {
+      "id": 2,
+      "email": "admin@email.com",
+      "password": "admin123"
+    },
+    {
+      "id": 3,
+      "email": "depp@email.com",
+      "password": "sdfsdf324"
+    },
+    {
+      "email": "user@email.com",
+      "password": "qwerty123",
+      "id": 4
+    },
+    {
+      "email": "manoj@gmail.com",
+      "password": "werwerwe123",
+      "id": 5
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
